@@ -23,7 +23,8 @@ namespace POS
             dataGridView1.Rows.Clear();
             foreach (var item in products)
             {
-                dataGridView1.Rows.Add(item.ProductID, item.Code, item.Details, item.WholeSalePrice.ToString("n"), item.RetailPrice.ToString("n"), item.DateUpdated.ToString("MM-dd-yyyy"));
+                dataGridView1.Rows.Add(item.ProductID, item.Code, item.Details, item.WholeSalePrice.ToString("n"), item.RetailPrice.ToString("n"), 
+                    item.DateUpdated.ToString("MM-dd-yyyy"));
             }
         }
 
